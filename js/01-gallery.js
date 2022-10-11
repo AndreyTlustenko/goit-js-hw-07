@@ -45,7 +45,7 @@ galleryContainer.addEventListener(`keydown`, e => {
 
      }
     };
-
+ 
 
    
 // const galleryContainer = document.querySelector(`.gallery`);
