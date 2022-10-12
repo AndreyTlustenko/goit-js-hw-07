@@ -27,19 +27,19 @@ galleryContainer.addEventListener(`click`, toClickGallery)
 function toClickGallery(e){
     e.preventDefault();
     if (!e.target.classList.contains('gallery__image')) {
-        return
+    return
     }
-        const myUrl = e.target.dataset.source;
-        openModal(myUrl);
+    const myUrl = e.target.dataset.source;
+    openModal(myUrl);
 
-        function openModal(e) {
-    const instance = basicLightbox.create(
-`<img src="${myUrl}">`)
-instance.show();
+function openModal(e) {
+    const instance = basicLightbox.create(`<img src="${myUrl}">`)
+    instance.show();
 
 galleryContainer.addEventListener(`keydown`, e => {
     if (e.key === 'Escape') {
-       instance.close(); 
+    instance.close(); 
+    galleryContainer.removeEventListener;
     }
 });
 

@@ -28,13 +28,8 @@ function toClickGallery(e){
     }
 };
    
-    const lightbox = new SimpleLightbox('.gallery a', {captionData:"alt", captionDelay: 250});
-//         const myUrl = e.target.dataset.source;
-//         openModal(myUrl);
-
-//         function openModal(e) {
-//     const instance = basicLightbox.create(
-// `<img src="${myUrl}">`)
+    const lightbox = new SimpleLightbox('.gallery a', {captionsData:"alt", captionDelay: 250});
+//        
 // instance.show();
 
 // galleryContainer.addEventListener(`keydown`, e => {
